@@ -34,7 +34,7 @@ public class Compra {
   }
 
   @Test
-  public void hacer_una_compra() {
+  public void hacer_una_compra() throws InterruptedException {
 
     //Abrir la URL
     chromeDriver.get("http://automationpractice.com/index.php");
@@ -92,6 +92,9 @@ public class Compra {
     WebElement bannerOrdenCompleta = chromeDriver.findElement(By.cssSelector("p[class='alert alert-success']"));
 
     Assert.assertTrue(bannerOrdenCompleta.isDisplayed());
+
+    Thread.sleep(40000);
+
   }
 
   @After
