@@ -52,6 +52,9 @@ public class BaseTestSuite {
         chromeDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         inicializarPaginas(chromeDriver);
+
+        // Abrir la URL
+        chromeDriver.get("http://automationpractice.com/index.php");
     }
 
     @After

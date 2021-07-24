@@ -18,13 +18,6 @@ public class PaginaOrderPayment {
         botonConfirmarCompra.click();
     }
 
-
-//    WebElement metodoPagoCheque = chromeDriver.findElement(By.cssSelector("a[title='Pay by check.']"));
-//    metodoPagoCheque.click();
-//
-//    WebElement botonConfirmarCompra = chromeDriver.findElement(By.cssSelector("button[class='button btn btn-default button-medium']"));
-//    botonConfirmarCompra.click();
-
     public PaginaOrderPayment(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }

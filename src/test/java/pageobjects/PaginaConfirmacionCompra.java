@@ -16,6 +16,12 @@ public class PaginaConfirmacionCompra {
         Thread.sleep(10000);
     }
 
+    public boolean resultadoDeOrden(String mensaje){
+        System.out.println(mensaje);
+        System.out.println(bannerOrdenCompleta.getText());
+        return mensaje.equals(bannerOrdenCompleta.getText());
+    }
+
     public PaginaConfirmacionCompra(WebDriver driver) {
         PageFactory.initElements(driver,this);
     }
